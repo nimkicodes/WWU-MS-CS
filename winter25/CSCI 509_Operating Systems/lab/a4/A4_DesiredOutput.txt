@@ -1,0 +1,202 @@
+Beginning execution...
+====================  KPL PROGRAM STARTING  ====================
+Initializing Thread Scheduler...
+Initializing Process Manager...
+Initializing Thread Manager...
+Initializing Frame Manager...
+AllocateRandomFrames called.  NUMBER_OF_PHYSICAL_PAGE_FRAMES = 140
+Initializing Disk Driver...
+Initializing File Manager...
+
+User-level program 'TestProgram1' is running...
+
+***** Testing Syscall Parameter Passing *****
+
+***** About to call Sys_Fork...
+***** Should print:
+*****     Handle_Sys_Fork invoked!
+
+Handle_Sys_Fork invoked!
+
+***** About to call Sys_Join...
+***** Should print:
+*****     Handle_Sys_Join invoked!
+*****     processID = 1111
+
+Handle_Sys_Join invoked!
+processID = 1111
+
+***** About to call Sys_Open...
+***** Should print:
+*****     Handle_Sys_Open invoked!
+*****     filename virtual Addr = 0x0000FFF8
+*****     filename = MyFileName
+*****     flags = 7
+*****     mode = 7
+
+Handle_Sys_Open invoked!
+filename virtual addr = 0x0000FFF8
+filename = MyFileName
+flags = 7
+mode = 7
+
+***** About to call Sys_Read...
+***** Should print:
+*****     Handle_Sys_Read invoked!
+*****     fileDesc = 2222
+*****     buffer virtual addr = 0x0000F0B4
+*****     sizeInBytes = 3333
+
+Handle_Sys_Read invoked!
+fileDesc = 2222
+buffer virtual addr = 0x0000F0B4
+sizeInBytes = 3333
+
+***** About to call Sys_Write...
+***** Should print:
+*****     Handle_Sys_Write invoked!
+*****     fileDesc = 4444
+*****     virt addr of buffer = 0x0x0000F0B4
+*****     sizeInBytes = 5555
+
+Handle_Sys_Write invoked!
+fileDesc = 4444
+buffer virtual addr = 0x0000F0B4
+sizeInBytes = 5555
+
+***** About to call Sys_Seek...
+***** Should print:
+*****     Handle_Sys_Seek invoked!
+*****     fileDesc = 6666
+*****     newCurrentPos = 7777
+
+Handle_Sys_Write invoked!
+fileDesc = 6666
+newCurrentPos = 7777
+
+***** About to call Sys_Stat...
+***** Should print:
+*****     Handle_Sys_Stat invoked!
+*****     filename virtual addr = 0x00012AA4
+*****     filename = StatFileName
+*****     statBuf = 0x0x00015E68
+
+Handle_Sys_Stat invoked!
+filename virtual addr = 0x00012AA4
+fileName = StatFileName
+statBuf virtual address = 0x00015E68
+
+***** About to call Sys_Chdir...
+***** Should print:
+*****     Handle_Sys_Chdir invoked!
+*****     filename virtual addr = 0x00012978
+*****     filename = DirName
+
+Handle_Sys_Chdir invoked!
+filename virtual addr = 0x00012978
+filename = DirName
+
+***** Syscall Test Complete *****
+
+***** Starting Syscall Error Tests *****
+Testing Sys_Open
+Okay.
+Okay.
+Testing Sys_Read
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Testing Sys_Write
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Testing Sys_Stat
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Testing Sys_Chdir
+Okay.
+Okay.
+
+***** Syscall Error Tests Complete *****
+
+***** Testing Exec Syscall *****
+
+***** About to call Sys_Exec with a non-existant file...
+***** Should print:
+*****     Okay
+
+Okay
+
+***** About to call Sys_Exec with an overly long file name...
+***** Should print:
+*****     Okay
+
+Okay
+
+***** About to call Sys_Exec with bad argument pointers...
+***** Should print:
+*****     Okay
+
+Okay
+
+***** About to call Sys_Exec with too many argument characters...
+***** Should print:
+*****     Okay
+
+Okay
+
+***** About to perform a successful Exec and jump to TestProgram2...
+***** Should print:
+*****     User-level program 'TestProgram2' is running!
+
+User-level program 'TestProgram2' is running!
+Command line arguments:
+   arg[0] is Arg0
+   arg[1] is This is a string longer than 20 chars
+   arg[2] is arg2
+   arg[3] is arg3
+   arg[4] is arg4 with more
+
+***** Testing Sys_Exec with a null argument list.
+*****  TestProgram2 should run a second time.
+
+User-level program 'TestProgram2' is running!
+Command line arguments:
+   None provided.
+
+***** About to call Sys_Shutdown...
+***** Should print:
+*****     "Syscall 'Shutdown' was invoked by a user thread"
+
+Syscall 'Shutdown' was invoked by a user thread
+
+====================  KPL PROGRAM TERMINATION  ====================
+Done!  The next instruction to execute will be:
+0010A8: C0100000       sethi   0x0000,r1	! 0x000010B8 = 4280 (noGoMessage)
+======================================================
+=====                                            =====
+=====         The BLITZ Machine Emulator         =====
+=====                                            =====
+=====  Copyright 2001-2007, Harry H. Porter III  =====
+=====                                            =====
+======================================================
+
+Enter a command at the prompt.  Type 'quit' to exit or 'help' for
+info about commands.
+> Number of Disk Reads    = 43
+Number of Disk Writes   = 0
+Instructions Executed   = 2551526
+Time Spent Sleeping     = 31140
+    Total Elapsed Time  = 2582666

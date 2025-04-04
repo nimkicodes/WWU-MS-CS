@@ -1,0 +1,779 @@
+====================  KPL PROGRAM STARTING  ====================
+Initializing Thread Scheduler...
+Initializing Process Manager...
+Initializing Thread Manager...
+Initializing Frame Manager...
+AllocateRandomFrames called.  NUMBER_OF_PHYSICAL_PAGE_FRAMES = 512
+Initializing Disk Driver...
+Initializing File Manager...
+Initializing ToyFs...
+
+SysExitTest running.
+
+About to terminate the only process; should cause the OS to stop on a 'wait' instruction.
+
+*****  A 'wait' instruction was executed and no more interrupts are scheduled... halting emulation!  *****
+
+
+====================  KPL PROGRAM STARTING  ====================
+Initializing Thread Scheduler...
+Initializing Process Manager...
+Initializing Thread Manager...
+Initializing Frame Manager...
+AllocateRandomFrames called.  NUMBER_OF_PHYSICAL_PAGE_FRAMES = 512
+Initializing Disk Driver...
+Initializing File Manager...
+Initializing ToyFs...
+
+BasicForkTest running.
+
+I am the parent
+I am the child
+
+*****  A 'wait' instruction was executed and no more interrupts are scheduled... halting emulation!  *****
+
+
+====================  KPL PROGRAM STARTING  ====================
+Initializing Thread Scheduler...
+Initializing Process Manager...
+Initializing Thread Manager...
+Initializing Frame Manager...
+AllocateRandomFrames called.  NUMBER_OF_PHYSICAL_PAGE_FRAMES = 512
+Initializing Disk Driver...
+Initializing File Manager...
+Initializing ToyFs...
+
+YieldTest running.
+
+This test involves calls to Fork, Yield, and Exit.
+
+RUN ONE: You should see 10 'compiler' messages and 10 'OS' messages.
+
+Writing OS kernel code is a blast!
+Writing OS kernel code is a blast!
+Writing OS kernel code is a blast!
+Writing OS kernel code is a blast!
+Writing OS kernel code is a blast!
+Writing OS kernel code is a blast!
+Writing OS kernel code is a blast!
+Writing OS kernel code is a blast!
+Writing OS kernel code is a blast!
+Writing OS kernel code is a blast!
+Designing compilers is fun!
+Designing compilers is fun!
+Designing compilers is fun!
+Designing compilers is fun!
+Designing compilers is fun!
+Designing compilers is fun!
+Designing compilers is fun!
+Designing compilers is fun!
+Designing compilers is fun!
+Designing compilers is fun!
+
+RUN TWO: You should see the same 20 messages, but the order should be different, due to the presence of 'Yield's.
+
+Designing compilers is fun!
+Designing compilers is fun!
+Writing OS kernel code is a blast!
+Designing compilers is fun!
+Writing OS kernel code is a blast!
+Designing compilers is fun!
+Writing OS kernel code is a blast!
+Designing compilers is fun!
+Writing OS kernel code is a blast!
+Designing compilers is fun!
+Writing OS kernel code is a blast!
+Writing OS kernel code is a blast!
+Designing compilers is fun!
+Writing OS kernel code is a blast!
+Writing OS kernel code is a blast!
+Writing OS kernel code is a blast!
+Writing OS kernel code is a blast!
+Designing compilers is fun!
+Designing compilers is fun!
+Designing compilers is fun!
+
+*****  A 'wait' instruction was executed and no more interrupts are scheduled... halting emulation!  *****
+
+
+====================  KPL PROGRAM STARTING  ====================
+Initializing Thread Scheduler...
+Initializing Process Manager...
+Initializing Thread Manager...
+Initializing Frame Manager...
+AllocateRandomFrames called.  NUMBER_OF_PHYSICAL_PAGE_FRAMES = 512
+Initializing Disk Driver...
+Initializing File Manager...
+Initializing ToyFs...
+
+ForkTest running.
+
+This test involves calls to Fork, Yield, and Exit.
+There should be 26 columns (A-Z) printed.  Each letter should be printed 5 times.
+A
+A
+A
+ B
+ B
+A
+ B
+ B
+A
+ B
+  C
+  C
+  C
+  C
+   D
+   D
+   D
+  C
+   D
+    E
+   D
+    E
+    E
+    E
+     F
+     F
+    E
+     F
+     F
+      G
+      G
+     F
+      G
+      G
+       H
+       H
+      G
+       H
+       H
+        I
+        I
+       H
+        I
+        I
+         J
+         J
+        I
+         J
+         J
+          K
+          K
+         J
+          K
+          K
+           L
+           L
+          K
+           L
+           L
+            M
+            M
+           L
+            M
+            M
+             N
+             N
+            M
+             N
+             N
+              O
+              O
+             N
+              O
+              O
+               P
+               P
+              O
+               P
+               P
+                Q
+                Q
+               P
+                Q
+                Q
+                 R
+                 R
+                Q
+                 R
+                 R
+                  S
+                  S
+                 R
+                  S
+                  S
+                   T
+                   T
+                  S
+                   T
+                   T
+                    U
+                    U
+                   T
+                    U
+                    U
+                     V
+                     V
+                    U
+                     V
+                     V
+                      W
+                      W
+                     V
+                      W
+                      W
+                       X
+                       X
+                      W
+                       X
+                       X
+                        Y
+                        Y
+                       X
+                        Y
+                        Y
+                         Z
+                         Z
+                        Y
+                         Z
+                         Z
+                         Z
+
+*****  A 'wait' instruction was executed and no more interrupts are scheduled... halting emulation!  *****
+
+
+====================  KPL PROGRAM STARTING  ====================
+Initializing Thread Scheduler...
+Initializing Process Manager...
+Initializing Thread Manager...
+Initializing Frame Manager...
+AllocateRandomFrames called.  NUMBER_OF_PHYSICAL_PAGE_FRAMES = 512
+Initializing Disk Driver...
+Initializing File Manager...
+Initializing ToyFs...
+
+JoinTest 1 running.
+
+This test involves calls to Fork, Yield, Join and Exit.
+Running first test...
+This line should print first.
+This line should print second.
+Done.
+Running second test...
+This line should print first.
+This line should print second.
+Done.
+
+*****  A 'wait' instruction was executed and no more interrupts are scheduled... halting emulation!  *****
+
+====================  KPL PROGRAM STARTING  ====================
+Initializing Thread Scheduler...
+Initializing Process Manager...
+Initializing Thread Manager...
+Initializing Frame Manager...
+AllocateRandomFrames called.  NUMBER_OF_PHYSICAL_PAGE_FRAMES = 512
+Initializing Disk Driver...
+Initializing File Manager...
+Initializing ToyFs...
+
+JoinTest 2 running.
+
+This test involves calls to Fork, Yield, and Exit.
+Creating 5 children...
+Child 1 running...
+Child 2 running...
+Child 3 running...
+Child 4 running...
+Waiting for children in order 1, 2, 3, 4, 5...
+Child 5 running...
+Creating 5 more children...
+Child 1 running...
+Child 2 running...
+Child 3 running...
+Child 4 running...
+Waiting for children in order 5, 4, 1, 3, 2...
+Child 5 running...
+Done.
+
+*****  A 'wait' instruction was executed and no more interrupts are scheduled... halting emulation!  *****
+
+
+====================  KPL PROGRAM STARTING  ====================
+Initializing Thread Scheduler...
+Initializing Process Manager...
+Initializing Thread Manager...
+Initializing Frame Manager...
+AllocateRandomFrames called.  NUMBER_OF_PHYSICAL_PAGE_FRAMES = 512
+Initializing Disk Driver...
+Initializing File Manager...
+Initializing ToyFs...
+
+JoinTest3 running.
+
+This test involves 5 illegal calls to Sys_Join, waiting on non-existent children.
+In each case, it prints the return code, which should be -1.
+Return code from 1st call = -1
+Return code from 2nd call = -1
+Return code from 3rd call = -1
+Return code from 4th call = -1
+Return code from 5th call = -1
+Done.
+
+*****  A 'wait' instruction was executed and no more interrupts are scheduled... halting emulation!  *****
+
+
+====================  KPL PROGRAM STARTING  ====================
+Initializing Thread Scheduler...
+Initializing Process Manager...
+Initializing Thread Manager...
+Initializing Frame Manager...
+AllocateRandomFrames called.  NUMBER_OF_PHYSICAL_PAGE_FRAMES = 512
+Initializing Disk Driver...
+Initializing File Manager...
+Initializing ToyFs...
+
+JoinTest4 running.
+
+   This test forks a child process and then waits on it twice.
+   The first call to Sys_Join should return its error code; the
+   second call to Sys_Join should return -1.
+
+The PID of the child = 2
+This should print first.
+This should print second.
+Okay (1).
+Okay (2).
+This should print first.
+The PID of the child = 3
+This should print second.
+Okay (3).
+Okay (4).
+
+   In the next test, we create 2 children, and each creates 2 children,
+   giving 7 processes in all.  Then each process attempts a Sys_Join on
+   every process except its own children, to make sure the result is -1.
+   Finally, each process with children waits on them.
+
+A is running...
+  My first  child is A.B   pid1 = 4
+  My second child is A.C   pid2 = 5
+---------------
+A.B.D is running...
+---------------
+A.C.F is running...
+---------------
+A.C is running...
+  My first  child is A.C.F   pid1 = 7
+  My second child is A.C.G   pid2 = 9
+---------------
+A.C.G is running...
+---------------
+A.B is running...
+  My first  child is A.B.D   pid1 = 6
+  My second child is A.B.E   pid2 = 8
+---------------
+A.B.E is running...
+---------------
+A done with error tests...
+A.C.F done with error tests...
+A.B.D done with error tests...
+A.C.G done with error tests...
+A.C done with error tests...
+A.B done with error tests...
+A.B.E done with error tests...
+-----------------------------------A is waiting on A.B     pid1 = 4
+-----------------------------------A.C is waiting on A.C.F     pid1 = 7
+-----------------------------------A.B is waiting on A.B.D     pid1 = 6
+A.C.F is done.
+-----------------------------------A.C is waiting on A.C.G     pid2 = 9
+A.C.G is done.
+A.C is done.
+A.B.E is done.
+A.B.D is done.
+-----------------------------------A.B is waiting on A.B.E     pid2 = 8
+A.B is done.
+-----------------------------------A is waiting on A.C     pid2 = 5
+A is done.
+
+*****  A 'wait' instruction was executed and no more interrupts are scheduled... halting emulation!  *****
+
+
+====================  KPL PROGRAM STARTING  ====================
+Initializing Thread Scheduler...
+Initializing Process Manager...
+Initializing Thread Manager...
+Initializing Frame Manager...
+AllocateRandomFrames called.  NUMBER_OF_PHYSICAL_PAGE_FRAMES = 512
+Initializing Disk Driver...
+Initializing File Manager...
+Initializing ToyFs...
+
+ManyProcessesTest1 running.
+
+This test should create 100 child processes.
+It should print 100 lines of output.
+Child 1
+Child 2
+Child 3
+Child 4
+Child 5
+Child 6
+Child 7
+Child 8
+Child 9
+Child 10
+Child 11
+Child 12
+Child 13
+Child 14
+Child 15
+Child 16
+Child 17
+Child 18
+Child 19
+Child 20
+Child 21
+Child 22
+Child 23
+Child 24
+Child 25
+Child 26
+Child 27
+Child 28
+Child 29
+Child 30
+Child 31
+Child 32
+Child 33
+Child 34
+Child 35
+Child 36
+Child 37
+Child 38
+Child 39
+Child 40
+Child 41
+Child 42
+Child 43
+Child 44
+Child 45
+Child 46
+Child 47
+Child 48
+Child 49
+Child 50
+Child 51
+Child 52
+Child 53
+Child 54
+Child 55
+Child 56
+Child 57
+Child 58
+Child 59
+Child 60
+Child 61
+Child 62
+Child 63
+Child 64
+Child 65
+Child 66
+Child 67
+Child 68
+Child 69
+Child 70
+Child 71
+Child 72
+Child 73
+Child 74
+Child 75
+Child 76
+Child 77
+Child 78
+Child 79
+Child 80
+Child 81
+Child 82
+Child 83
+Child 84
+Child 85
+Child 86
+Child 87
+Child 88
+Child 89
+Child 90
+Child 91
+Child 92
+Child 93
+Child 94
+Child 95
+Child 96
+Child 97
+Child 98
+Child 99
+Child 100
+Done.
+
+*****  A 'wait' instruction was executed and no more interrupts are scheduled... halting emulation!  *****
+
+
+====================  KPL PROGRAM STARTING  ====================
+Initializing Thread Scheduler...
+Initializing Process Manager...
+Initializing Thread Manager...
+Initializing Frame Manager...
+AllocateRandomFrames called.  NUMBER_OF_PHYSICAL_PAGE_FRAMES = 512
+Initializing Disk Driver...
+Initializing File Manager...
+Initializing ToyFs...
+
+ManyProcessesTest2 running.
+
+This test attempts to create 9 new processes.
+It should print a line for each process and then it should print 123.
+Process 0
+Process 1
+Process 2
+Process 3
+Process 4
+Process 5
+Process 6
+Process 7
+Process 8
+Process 9
+Final return value = 123
+Done.
+
+*****  A 'wait' instruction was executed and no more interrupts are scheduled... halting emulation!  *****
+
+
+====================  KPL PROGRAM STARTING  ====================
+Initializing Thread Scheduler...
+Initializing Process Manager...
+Initializing Thread Manager...
+Initializing Frame Manager...
+AllocateRandomFrames called.  NUMBER_OF_PHYSICAL_PAGE_FRAMES = 512
+Initializing Disk Driver...
+Initializing File Manager...
+Initializing ToyFs...
+
+ManyProcessesTest3 running.
+
+This test attempts to create 10 new processes.
+It should run out of resources and hang.
+Process 0
+Process 1
+Process 2
+Process 3
+Process 4
+Process 5
+Process 6
+Process 7
+Process 8
+Process 9
+
+*****  A 'wait' instruction was executed and no more interrupts are scheduled... halting emulation!  *****
+
+
+====================  KPL PROGRAM STARTING  ====================
+Initializing Thread Scheduler...
+Initializing Process Manager...
+Initializing Thread Manager...
+Initializing Frame Manager...
+AllocateRandomFrames called.  NUMBER_OF_PHYSICAL_PAGE_FRAMES = 512
+Initializing Disk Driver...
+Initializing File Manager...
+Initializing ToyFs...
+
+ArgsWithForkTest running.
+
+Okay.
+
+TestProgram3a is now running as pid  = 1
+Number of command line arguments is:  = 10
+Last argument is: End Of Args
+Child's pid in child is  = 2
+Parent's pid is:  = 1
+Success! args are the same in the child!
+Parent process spawned child with pid:  = 2
+
+*****  A 'wait' instruction was executed and no more interrupts are scheduled... halting emulation!  *****
+
+
+====================  KPL PROGRAM STARTING  ====================
+Initializing Thread Scheduler...
+Initializing Process Manager...
+Initializing Thread Manager...
+Initializing Frame Manager...
+AllocateRandomFrames called.  NUMBER_OF_PHYSICAL_PAGE_FRAMES = 512
+Initializing Disk Driver...
+Initializing File Manager...
+Initializing ToyFs...
+
+ErrorTest running.
+
+Should print "User Program Error: Attempt to use a null pointer!"...
+
+User Program Error: Attempt to use a null pointer!  Type 'st' to see stack.
+
+Okay.
+Okay.
+
+Should print "An AddressException exception has occured while in user mode"...
+AddressException at Virtual Address = 0x00000000
+
+**********  An AddressException exception has occured while in user mode  **********
+
+  ProcessControlBlock   (addr=0x000AE870)   pid=3, status=ACTIVE, parentsPid=1, exitStatus=0
+        addr        entry          Logical    Physical   Undefined Bits  Dirty  Referenced  Writeable  Valid
+     ==========   ==========     ==========  ==========  ==============  =====  ==========  =========  =====
+     0x000AE89C:  0x001F4005     0x00000000  0x001F4000                            YES                  YES
+     0x000AE8A0:  0x001F8001     0x00002000  0x001F8000                                                 YES
+     0x000AE8A4:  0x001FC001     0x00004000  0x001FC000                                                 YES
+     0x000AE8A8:  0x00200001     0x00006000  0x00200000                                                 YES
+     0x000AE8AC:  0x00204001     0x00008000  0x00204000                                                 YES
+     0x000AE8B0:  0x00208005     0x0000A000  0x00208000                            YES                  YES
+     0x000AE8B4:  0x0020C003     0x0000C000  0x0020C000                                        YES      YES
+     0x000AE8B8:  0x00210003     0x0000E000  0x00210000                                        YES      YES
+     0x000AE8BC:  0x00214003     0x00010000  0x00214000                                        YES      YES
+     0x000AE8C0:  0x00218003     0x00012000  0x00218000                                        YES      YES
+     0x000AE8C4:  0x0021C00F     0x00014000  0x0021C000                   YES      YES         YES      YES
+    myThread =   Thread "TestProgram3"    status=RUNNING    (addr of Thread object: 0x000B0F54)
+0: null
+1: null
+2: null
+3: null
+4: null
+5: null
+6: null
+7: null
+8: null
+9: null
+ Working Dir:     OPEN FILE:   currentPos=104 numOfUsers=3, fcb=inode.number=1,  numberOfUsers=1,  bufferPtr=0x00100000,  relativeSectorInBuffer=0
+Inode: IN: 1 drw- 2 148 (1) [1,0,0,0,0,0,0,0,0,0] 0
+  Thread "TestProgram3"    (addr of Thread object: 0x000B0F54)
+    machine state:
+      r2: 0x000AD6C4   710340
+      r3: 0x00000004   4
+      r4: 0x00000000   0
+      r5: 0x00000000   0
+      r6: 0x00000000   0
+      r7: 0x00000000   0
+      r8: 0x00000000   0
+      r9: 0x00000000   0
+      r10: 0x00004345   17221
+      r11: 0x00000000   0
+      r12: 0x00000000   0
+      r13: 0x00000053   83
+      r14: 0x000B1E74   728692
+    stackTop = 0x000B1E1C
+    stack starting addr = 0x000B0FB0
+    status = RUNNING
+    is user thread: TRUE
+    user PC: 0x0000037D
+    user registers:
+      r1: 0x00000000   0
+      r2: 0x00000000   0
+      r3: 0x00000000   0
+      r4: 0x00000000   0
+      r5: 0x00000007   7
+      r6: 0x00000000   0
+      r7: 0x00000000   0
+      r8: 0x00000000   0
+      r9: 0x00000000   0
+      r10: 0x00004345   17221
+      r11: 0x00000000   0
+      r12: 0x00000000   0
+      r13: 0x00000044   68
+      r14: 0x00015F90   90000
+      r15: 0x00015F6C   89964
+
+Okay.
+Okay.
+
+Should print "A PageReadonlyException exception has occured while in user mode"...
+
+**********  A PageReadonlyException exception has occured while in user mode  **********
+
+  ProcessControlBlock   (addr=0x000AE934)   pid=4, status=ACTIVE, parentsPid=1, exitStatus=0
+        addr        entry          Logical    Physical   Undefined Bits  Dirty  Referenced  Writeable  Valid
+     ==========   ==========     ==========  ==========  ==============  =====  ==========  =========  =====
+     0x000AE960:  0x001F4005     0x00000000  0x001F4000                            YES                  YES
+     0x000AE964:  0x001F8001     0x00002000  0x001F8000                                                 YES
+     0x000AE968:  0x001FC001     0x00004000  0x001FC000                                                 YES
+     0x000AE96C:  0x00200001     0x00006000  0x00200000                                                 YES
+     0x000AE970:  0x00204001     0x00008000  0x00204000                                                 YES
+     0x000AE974:  0x00208005     0x0000A000  0x00208000                            YES                  YES
+     0x000AE978:  0x0020C003     0x0000C000  0x0020C000                                        YES      YES
+     0x000AE97C:  0x00210003     0x0000E000  0x00210000                                        YES      YES
+     0x000AE980:  0x00214003     0x00010000  0x00214000                                        YES      YES
+     0x000AE984:  0x00218003     0x00012000  0x00218000                                        YES      YES
+     0x000AE988:  0x0021C00F     0x00014000  0x0021C000                   YES      YES         YES      YES
+    myThread =   Thread "TestProgram3"    status=RUNNING    (addr of Thread object: 0x000B1F98)
+0: null
+1: null
+2: null
+3: null
+4: null
+5: null
+6: null
+7: null
+8: null
+9: null
+ Working Dir:     OPEN FILE:   currentPos=104 numOfUsers=3, fcb=inode.number=1,  numberOfUsers=1,  bufferPtr=0x00100000,  relativeSectorInBuffer=0
+Inode: IN: 1 drw- 2 148 (1) [1,0,0,0,0,0,0,0,0,0] 0
+  Thread "TestProgram3"    (addr of Thread object: 0x000B1F98)
+    machine state:
+      r2: 0x00000000   0
+      r3: 0x00000000   0
+      r4: 0x00000000   0
+      r5: 0x00000000   0
+      r6: 0x00000000   0
+      r7: 0x00000000   0
+      r8: 0x00000000   0
+      r9: 0x00000000   0
+      r10: 0x00000000   0
+      r11: 0x00000000   0
+      r12: 0x00000000   0
+      r13: 0x00000000   0
+      r14: 0x00000000   0
+    stackTop = 0x000B2F8C
+    stack starting addr = 0x000B1FF4
+    status = RUNNING
+    is user thread: TRUE
+    user PC: 0x00000258
+    user registers:
+      r1: 0x00000000   0
+      r2: 0x00000000   0
+      r3: 0x00000000   0
+      r4: 0x00000000   0
+      r5: 0x00000007   7
+      r6: 0x00000000   0
+      r7: 0x00000000   0
+      r8: 0x00000000   0
+      r9: 0x00000000   0
+      r10: 0x00004345   17221
+      r11: 0x00000000   0
+      r12: 0x00000000   0
+      r13: 0x00000044   68
+      r14: 0x00015F90   90000
+      r15: 0x00015F6C   89964
+
+Okay.
+Okay.
+
+Child started to exit with -1.
+Joining child.
+Okay.
+Okay.
+
+Exec error checks: 
+Okay.
+Okay.
+
+Error Tests Done.
+
+*****  A 'wait' instruction was executed and no more interrupts are scheduled... halting emulation!  *****
+

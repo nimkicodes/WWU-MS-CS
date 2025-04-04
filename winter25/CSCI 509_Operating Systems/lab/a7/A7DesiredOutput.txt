@@ -1,0 +1,300 @@
+====================  KPL PROGRAM STARTING  ====================
+Initializing Thread Scheduler...
+Initializing Process Manager...
+Initializing Thread Manager...
+Initializing Frame Manager...
+AllocateRandomFrames called.  NUMBER_OF_PHYSICAL_PAGE_FRAMES = 512
+Initializing Disk Driver...
+Initializing File Manager...
+Initializations finished, starting first process.
+
+********** Running OpenAndReadDirTest ************
+
+Listing the contents several directories.
+/ should have 23 inode numbers and 24 file names.
+Listing the directory '/':
+1 .
+1 ..
+2 MyProgram
+3 TestProgram1
+4 TestProgram2
+5 TestProgram3
+6 TestProgram3a
+7 TestProgram4
+8 Program1
+9 Program2
+10 TestProgram5
+11 TestProgram4a
+12 TestProgram5.k
+13 file1
+14 file2
+15 file3
+16 file1234abcd
+17 FileWithVeryLongName012345678901234567890123456789
+18 xProg
+19 subdir
+20 odir
+28 file4
+29 file5
+30 file6
+Okay.
+Checking File count: Okay.
+
+subdir should have 7 inode numbers and 7 file names.
+Listing the directory 'subdir':
+19 .
+1 ..
+21 file1
+22 file2
+23 file3
+24 file1234abcd
+25 Program1
+Okay.
+Checking File count: Okay.
+
+odir should have 4 inode numbers and 7 file name.
+   first, cd to odir and then use .
+Okay.
+Listing the directory '.':
+20 .
+1 ..
+26 TestProgram4a
+27 TestProgram4b
+Okay.
+Checking File count: Okay.
+
+subdir should have 7 inode numbers and 7 file names. (2nd listing)
+Listing the directory '/subdir':
+19 .
+1 ..
+21 file1
+22 file2
+23 file3
+24 file1234abcd
+25 Program1
+Okay.
+Checking File count: Okay.
+
+**********  Testing Errors **********
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+
+**********  Test Complete  **********
+
+
+*****  A 'wait' instruction was executed and no more interrupts are scheduled... halting emulation!  *****
+
+
+====================  KPL PROGRAM STARTING  ====================
+Initializing Thread Scheduler...
+Initializing Process Manager...
+Initializing Thread Manager...
+Initializing Frame Manager...
+AllocateRandomFrames called.  NUMBER_OF_PHYSICAL_PAGE_FRAMES = 512
+Initializing Disk Driver...
+Initializing File Manager...
+Initializations finished, starting first process.
+
+********** Running DupTest ************
+
+Okay.
+Okay.
+Checking that the file contains "12345678901234567890" at position 0...
+Okay.
+Checking that the file contains "12345678901234567890" at position 0...
+Okay.
+Checking that the file contains "12345678901234567890" at position 0...
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+
+**********  Test Complete  **********
+
+
+*****  A 'wait' instruction was executed and no more interrupts are scheduled... halting emulation!  *****
+
+====================  KPL PROGRAM STARTING  ====================
+Initializing Thread Scheduler...
+Initializing Process Manager...
+Initializing Thread Manager...
+Initializing Frame Manager...
+AllocateRandomFrames called.  NUMBER_OF_PHYSICAL_PAGE_FRAMES = 512
+Initializing Disk Driver...
+Initializing File Manager...
+Initializations finished, starting first process.
+
+********** Running PipeTest ************
+
+Preparing pipe tests....
+Okay.
+Okay.
+code TestPr
+Pipe test one...
+Okay.
+Okay.
+Okay.
+Okay.
+Pipe test two...(may hang if you have a bug.)
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Pipe test three ... this may also hang
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Pipe test four ... this may also hang
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+****** Checking Errors *****
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+
+**********  Test Complete  **********
+
+
+*****  A 'wait' instruction was executed and no more interrupts are scheduled... halting emulation!  *****
+
+====================  KPL PROGRAM STARTING  ====================
+Initializing Thread Scheduler...
+Initializing Process Manager...
+Initializing Thread Manager...
+Initializing Frame Manager...
+AllocateRandomFrames called.  NUMBER_OF_PHYSICAL_PAGE_FRAMES = 512
+Initializing Disk Driver...
+Initializing File Manager...
+Initializations finished, starting first process.
+
+**********  Running ChModeTest  **********
+
+Doing Sys_Stat on file1.
+Okay.
+13 -rw- 1 72 file1
+Doing a ChMode on file1.
+Okay.
+Okay.
+Doing another ChMode on file1.
+Okay.
+Okay.
+Checking ChMode on an open file.
+Okay.
+Still same mode after close.
+Okay.
+
+**********  Checking Errors **************
+Okay.
+Okay.
+Okay.
+Okay.
+
+**********  Test Complete  **********
+
+
+*****  A 'wait' instruction was executed and no more interrupts are scheduled... halting emulation!  *****
+
+
+====================  KPL PROGRAM STARTING  ====================
+Initializing Thread Scheduler...
+Initializing Process Manager...
+Initializing Thread Manager...
+Initializing Frame Manager...
+AllocateRandomFrames called.  NUMBER_OF_PHYSICAL_PAGE_FRAMES = 512
+Initializing Disk Driver...
+Initializing File Manager...
+Initializations finished, starting first process.
+
+**********  Running LinkTest  **********
+
+Linking file3 to file3-1
+Okay.
+Okay.
+Checking nlinks : Okay.
+Checking inodeNum : Okay.
+Checking mode : Okay.
+Checking fsize: Okay.
+Okay.
+Linking /file3 to /odir/file3-2
+Okay.
+Okay.
+Checking nlinks : Okay.
+Checking inodeNum : Okay.
+Checking mode: Okay.
+Checking fsize: Okay.
+Error testing for Sys_Link
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+
+**********  Test Complete  **********
+
+
+*****  A 'wait' instruction was executed and no more interrupts are scheduled... halting emulation!  *****
+
+
+====================  KPL PROGRAM STARTING  ====================
+Initializing Thread Scheduler...
+Initializing Process Manager...
+Initializing Thread Manager...
+Initializing Frame Manager...
+AllocateRandomFrames called.  NUMBER_OF_PHYSICAL_PAGE_FRAMES = 512
+Initializing Disk Driver...
+Initializing File Manager...
+Initializations finished, starting first process.
+
+**********  Running UnlinkTest  **********
+
+Preparing test ...Okay.
+Disk free inodes = 98
+Disk free blocks = 65
+Simple unlink of TestProgram4
+TestProgram4 datablocks = 31
+Okay.
+Okay.
+Checking Blocks : Okay.
+Checking when unlinked file is removed.
+Okay.
+Okay.
+Okay.
+Okay.
+Checking Blocks : Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Checking Inodes : Okay.
+Okay.
+Okay.
+Checking Blocks : Okay.
+Checking Inodes : Okay.
+
+**********  Test Complete  **********
+
+
+*****  A 'wait' instruction was executed and no more interrupts are scheduled... halting emulation!  *****
